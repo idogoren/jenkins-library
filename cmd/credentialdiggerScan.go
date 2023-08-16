@@ -104,6 +104,7 @@ func credentialdiggerScan(config credentialdiggerScanOptions, telemetryData *tel
 		// The exit number is the number of discoveries
 		// Therefore, this error is not relevant, if raised
 		log.Entry().Warn("There are findings to review")
+		return err
 	}
 
 	// 4: Export report in workspace
